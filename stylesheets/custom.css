@@ -1,0 +1,14 @@
+/* line 1, ../sass/custom.scss */
+img {
+  height: 400px !important;
+}
+
+/* line 4, ../sass/custom.scss */
+.card-container {
+  margin-top: 40px;
+}
+
+/* line 7, ../sass/custom.scss */
+#img-modal {
+  align-content: center;
+}
