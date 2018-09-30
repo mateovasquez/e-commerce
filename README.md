@@ -1,2 +1,2 @@
 # E-commerce
-E-commerce of a library made with JS and Bootstrap.
+Responsive e-commerce of a library made with Vue.js and Bootstrap.
