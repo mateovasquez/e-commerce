@@ -31,7 +31,7 @@ var app = new Vue ({
         },
         addCarrito : function (){
             this.items ++;
-            console.log(this.items)
+            document.getElementById('carrito').innerHTML = this.items + ' ITEMS';
         }
     }
 })
