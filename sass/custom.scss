@@ -2,9 +2,19 @@ img{
     height: 400px !important;
 }
 #libreria{
-    .img-size{
-        height: 100%;
-        width: 100%;
-        object-fit: cover;
+    article{
+        div:first-child{
+            cursor: pointer;
+            &:hover{
+                opacity: 0.9;
+                transition-duration: 0.3s;
+                transform: scale(1.005)
+            }
+        }
+        .img-size{
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+        }
     }
 }

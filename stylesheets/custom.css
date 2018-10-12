@@ -3,7 +3,19 @@ img {
   height: 400px !important;
 }
 
-/* line 5, ../sass/custom.scss */
-#libreria .img-size {
+/* line 6, ../sass/custom.scss */
+#libreria article div:first-child {
+  cursor: pointer;
+}
+/* line 8, ../sass/custom.scss */
+#libreria article div:first-child:hover {
+  opacity: 0.9;
+  transition-duration: 0.3s;
+  transform: scale(1.005);
+}
+/* line 14, ../sass/custom.scss */
+#libreria article .img-size {
+  height: 100%;
+  width: 100%;
   object-fit: cover;
 }

@@ -20,18 +20,26 @@ var app = new Vue ({
             {img: 'https://i.pinimg.com/originals/c4/ba/d7/c4bad7c7e41c2385c007e10f4c39d864.jpg', title: 'Solo', price: '10.99$'}
             
         ],
-        items : 0
+        items : 0,
     },
     methods: {
-        showImage : function (event) {
-            var image = event.target.src;
-            var titulo = event.target.alt;
-            document.getElementById('img-modal').src = image;
-            document.querySelector('.modal-title').innerText = titulo;
+        showModalImage : function (e) {
+            var bookImg = e.target.src;
+            var bookTitle = e.target.alt;
+            var bookPrice = e.target.dataset.price;
+            document.getElementById('img-modal').src = bookImg;
+            document.querySelector('.modal-title').innerText = bookTitle;
+            document.getElementById('book-price').innerHTML = 'Price: ' + bookPrice;
         },
-        addCarrito : function (){
+        addItemToCart : function (){
+            var cart = document.getElementById('cart');
             this.items ++;
-            document.getElementById('carrito').innerHTML = this.items + ' ITEMS';
+            if (this.items == 1){
+                cart.innerHTML = this.items + ' ITEM';
+            } else {
+                cart.innerHTML = this.items + ' ITEMS';
+            };
+            cart.classList.add('text-success')
         }
     }
 })
