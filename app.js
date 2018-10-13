@@ -1,5 +1,5 @@
 var app = new Vue ({
-    el: '#libreria',
+    el: '#library',
     data: {
         books: [
             {img: 'http://3.bp.blogspot.com/-CclwoRgio58/UjidzSg_-oI/AAAAAAAALwE/9TALCs9JmYw/s1600/cartas+desde+la+isla.jpg', title: 'Cartas des de la isla', price: '10.99$'},
@@ -28,9 +28,11 @@ var app = new Vue ({
             var bookTitle = e.target.alt;
             var bookPrice = e.target.dataset.price;
             document.getElementById('img-modal').src = bookImg;
+            document.getElementById('img-modal').alt = bookTitle;
             document.querySelector('.modal-title').innerText = bookTitle;
-            document.getElementById('book-price').innerHTML = 'Price: ' + bookPrice;
+            document.getElementById('book-price').innerText = 'Price: ' + bookPrice;
         },
+
         addItemToCart : function (){
             var cart = document.getElementById('cart');
             this.items ++;

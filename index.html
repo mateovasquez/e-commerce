@@ -7,8 +7,7 @@
     <link rel="stylesheet" href="stylesheets/custom.css">
   </head>
   <body>
-    
-      <header>
+      <header class="mt-2">
           <nav class="navbar navbar-expand navbar-light bg-light">
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
               <div class="w-100 navbar-nav d-flex justify-content-between px-5">
@@ -25,13 +24,13 @@
             </div>
           </nav>
       </header>
-      <main id="libreria" class="container-fluid">
+      <main id="library" class="container-fluid">
         <section class="row d-flex">
           <article class="col-6 col-md-4 col-lg-3 mt-4" v-for="book in books" data-toggle="modal" data-target="#exampleModalCenter">
             <div class="card image-size h-100">
-              <img class="card-img-top" :src="book.img" :alt="book.title" :data-price="book.price" @click="showModalImage">
+              <img class="card-img-top img-fluid" :src="book.img" :alt="book.title" :data-price="book.price" @click="showModalImage">
               <div class="card-body d-flex justify-content-between">
-                <p class="card-text">{{book.title}}</p>
+                <strong class="card-text">{{book.title}}</strong>
                 <p class="card-text">{{book.price}}</p>
               </div>
             </div>

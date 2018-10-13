@@ -1,7 +1,7 @@
 img{
     height: 400px !important;
 }
-#libreria{
+#library{
     article{
         div:first-child{
             cursor: pointer;
@@ -10,11 +10,6 @@ img{
                 transition-duration: 0.3s;
                 transform: scale(1.005)
             }
-        }
-        .img-size{
-            height: 100%;
-            width: 100%;
-            object-fit: cover;
         }
     }
 }
